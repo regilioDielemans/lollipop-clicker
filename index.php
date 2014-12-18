@@ -1,19 +1,25 @@
 <?php require 'includes/header.php' ?>
 
-<div class="container">
-	<h1>Candies</h1>
+<div class="page-header">
+	<div class="container">
+		<h1>Candies</h1>
+	</div>
 </div>
-<hr>
+
 <div class="container">
-	<div class="col-md-1 col-md-offset-5">
+	<div class="col-md-4">
+		<p class="ja"></p>
+	</div>
+
+	<div class="col-md-2">
 		<div class="clicker">
-		<img src="assets/img/lollipop1.png" alt="">
+			<img src="assets/img/lollipop1.png" alt="">
 		</div>
 	</div>
-	
-	<p class="ja">je hebt nog niet geklikt</p>
 
-
-
+	<div class="col-md-4">
+		<button class="keer-2 btn">klik keer 2 voor 20 mini lolies</button>
+	</div>
 </div>
+
 <?php require 'includes/footer.php'; ?>
