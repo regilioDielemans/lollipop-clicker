@@ -24,11 +24,17 @@ h1 {
 }
 
 img {
-	height: 200px;
+	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	transition: height 0.2s;
 	
 }
+img:active{
+	height: 180px;
+}
+
+
 button{
 	background-color: #DD038F;
 }

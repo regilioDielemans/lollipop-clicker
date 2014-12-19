@@ -7,6 +7,7 @@ $(".clicker").click(function(){
     case 1:
          lollies = lollies + 1;
 		$(".ja").html("<h2>je hebt " + lollies + " mini lollies<h2>");
+
         break;
     case 2:
         lollies = lollies + 2;
@@ -19,10 +20,11 @@ $(".clicker").click(function(){
 
 $(".keer-2").click(function(){
 	if(level  > 1){
-		alert('je hebt dit al gekocht');
+		
 	}else if(lollies >= 20) {
 		lollies = lollies - 20;
 		level = 2;
+		$(".keer-2").html('<strike>klik keer 2 voor 20 mini lolies</strike>');
 		$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
 	};
 	 
