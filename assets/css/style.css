@@ -24,7 +24,7 @@ h1 {
 }
 
 img {
-	height: 500px;
+	height: 300px;
 	margin-left: auto;
 	margin-right: auto;
 	transition: height 0.2s;
@@ -37,4 +37,6 @@ img:active{
 
 button{
 	background-color: #DD038F;
+	margin-top: 10px;
+	width: 250px;
 }

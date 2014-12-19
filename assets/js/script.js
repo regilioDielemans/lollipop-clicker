@@ -1,6 +1,8 @@
     var lollies = 0;
     var level = 1;
+    var auto = 0;
     $(".ja").html("<h2>klik op die lollie<h2>");
+
 $(".clicker").click(function(){
 
 	switch(level) {
@@ -29,4 +31,22 @@ $(".keer-2").click(function(){
 	};
 	 
 
+});
+
+$(".auto-click").click(function(){
+	if (lollies >= 200){
+		auto = 1;
+		lollies = lollies - 200;
+		$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
+		$(".auto-click").html("<strike>auto click voor 200 mini lollies</strike>"); 
+
+		
+
+		setInterval(function(){
+			lollies = lollies + 1;
+			$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
+	} ,1000);
+
+
+	}
 });

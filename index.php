@@ -10,13 +10,14 @@
 <div class="container">
 		<div class="col-md-3">
 		<div class="clicker">
-			<img class="lollipop-img" src="assets/img/lollipop1.png" alt="">
+			<img class="lollipop-img" src="assets/img/lollipop2.png" alt="">
 		</div>
 	</div>
 
 	<div class="col-md-4">
 		<p class="ja"></p>
 		<button class="keer-2 btn">klik keer 2 voor 20 mini lolies</button>
+		<button class="auto-click btn">auto click voor 200 mini lollies</button>
 	</div>
 
 
