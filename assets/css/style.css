@@ -21,6 +21,7 @@ h1 {
 .clicker{
 	margin-right: auto;
 	margin-left: auto;
+	height: 320px;
 }
 
 img {
@@ -31,7 +32,7 @@ img {
 	
 }
 img:active{
-	height: 180px;
+	height: 200px;
 }
 
 
@@ -40,3 +41,29 @@ button{
 	margin-top: 10px;
 	width: 250px;
 }
+
+
+@media (max-width: 767px) { 
+
+html{
+	width: 200px;
+}
+
+body{
+	width: 200px;
+	max-height: 20px;
+}
+.container{
+	width: 200px;
+}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+body{
+	width: 200px;
+	max-height: 20px;
+}
+
+ }

@@ -1,7 +1,15 @@
     var lollies = 0;
     var level = 1;
-    var auto = 0;
-    $(".ja").html("<h2>klik op die lollie<h2>");
+    var test = 0;
+    
+    $(".ja").html("<h2>klik op de lollie<h2>");
+
+function autoclicker (lvl,time) {
+	auto = setInterval(function(){
+			lollies = lollies + lvl;
+			$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
+	} ,time);
+}
 
 $(".clicker").click(function(){
 
@@ -16,8 +24,8 @@ $(".clicker").click(function(){
 		$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
         break;
 
-}
-  });
+	}
+});
 
 
 $(".keer-2").click(function(){
@@ -33,20 +41,36 @@ $(".keer-2").click(function(){
 
 });
 
+
+
+
 $(".auto-click").click(function(){
-	if (lollies >= 200){
-		auto = 1;
-		lollies = lollies - 200;
-		$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
-		$(".auto-click").html("<strike>auto click voor 200 mini lollies</strike>"); 
-
-		
-
-		setInterval(function(){
-			lollies = lollies + 1;
+	if (test = 0){
+		if (lollies >= 100){
+			lollies = lollies - 100;
 			$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
-	} ,1000);
+			$(".auto-click").html("upgrade autoclicker voor 200 mini lollies");
+			autoclicker(1,1000);
+			var test = 1
+		}
+	}
 
+	if (test = 1){
+			if (lollies >= 200){	
+				lollies = lollies - 200;
+				$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
+				$(".auto-click").html("<strike>upgrade autoclicker voor 200 mini lollies</strike>");
+				window.clearInterval(auto);
+				autoclicker(2,1000);
+				test = 2
+		}
 
 	}
+
 });
+
+// $(".upgrade-click").click(function(){
+
+// 	window.clearInterval(auto);
+// 	autoclicker(2,1000);
+// });
