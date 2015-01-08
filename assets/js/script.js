@@ -1,4 +1,4 @@
-    var lollies = 0;
+    var lollies = 100;
     var level = 1;
     var test = 0;
     
@@ -12,21 +12,17 @@ function autoclicker (lvl,time) {
 }
 
 $(".clicker").click(function(){
-
 	switch(level) {
     case 1:
          lollies = lollies + 1;
 		$(".ja").html("<h2>je hebt " + lollies + " mini lollies<h2>");
-
         break;
     case 2:
         lollies = lollies + 2;
 		$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
         break;
-
 	}
 });
-
 
 $(".keer-2").click(function(){
 	if(level  > 1){
@@ -37,25 +33,20 @@ $(".keer-2").click(function(){
 		$(".keer-2").html('<strike>klik keer 2 voor 20 mini lolies</strike>');
 		$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
 	};
-	 
-
 });
 
-
-
-
 $(".auto-click").click(function(){
-	if (test = 0){
+	if (test == 0){
 		if (lollies >= 100){
 			lollies = lollies - 100;
 			$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
 			$(".auto-click").html("upgrade autoclicker voor 200 mini lollies");
 			autoclicker(1,1000);
-			var test = 1
+			test = 1
 		}
 	}
 
-	if (test = 1){
+	if (test == 1){
 			if (lollies >= 200){	
 				lollies = lollies - 200;
 				$(".ja").html("<h2>je hebt " + lollies + " mini lollies</h2>");
@@ -64,9 +55,7 @@ $(".auto-click").click(function(){
 				autoclicker(2,1000);
 				test = 2
 		}
-
 	}
-
 });
 
 // $(".upgrade-click").click(function(){
