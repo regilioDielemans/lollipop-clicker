@@ -6,64 +6,49 @@ body{
 	background-color: #F5041A
 }
 h1 {
-
-
-	color:#FDDC00;
-	
+	color:#FDDC00;	
 }
-
-.container{
+.container, .container2 {
 	margin-right: auto;
 	margin-left: auto;
 	width: 1060px;
 }
-
-.clicker{
+.lollipop_clicker, .clicker2 {
 	margin-right: auto;
 	margin-left: auto;
 	height: 320px;
 }
-
 img {
 	height: 300px;
 	margin-left: auto;
 	margin-right: auto;
 	transition: height 0.2s;
-	
 }
 img:active{
 	height: 200px;
 }
-
-
 button{
 	background-color: #DD038F;
 	margin-top: 10px;
 	width: 250px;
 }
-
-
-@media (max-width: 767px) { 
-
-html{
-	width: 200px;
+@media (max-width: 200px) { 
+	html{
+		width: 200px;
+	}
+	body{
+		width: 200px;
+		max-height: 20px;
+	}
+	.container{
+		width: 200px;
+	}
 }
 
-body{
-	width: 200px;
-	max-height: 20px;
-}
-.container{
-	width: 200px;
-}
-
-}
- 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-body{
-	width: 200px;
-	max-height: 20px;
+	body{
+		width: 200px;
+		max-height: 20px;
+	}
 }
-
- }
