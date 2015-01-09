@@ -1,9 +1,17 @@
 body{
 	background-color: #F2E608;
+	color: black;
+}
+* {
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .page-header {
 	margin-top: 0px;
-	background-color: #F5041A
+	background-color: #F5041A;
 }
 h1 {
 	color:#FDDC00;	
@@ -13,7 +21,7 @@ h1 {
 	margin-left: auto;
 	width: 1060px;
 }
-.lollipop_clicker, .gummybear_clicker {
+.lollipop_clicker, .gummybear_clicker, .candy_Store {
 	margin-right: auto;
 	margin-left: auto;
 	height: 320px;
@@ -112,4 +120,7 @@ button{
 	margin-top: 5px;
 	color: white;
 	background-color: transparent;
+}
+.jumbotron h1, .jumbotron .h1 {
+	padding-left: 10px;
 }

@@ -1,8 +1,9 @@
 $( document ).ready(function() {
 	$('.container2').hide();
+	$('.container3').hide();
 	$(".pop_up_candy_store").hide();
 
-	var lollies = 20000000;
+	var lollies = 2000000;
 	var lollies_level = 1;
 	var autoclicker_level = 1;
 
@@ -15,6 +16,7 @@ $( document ).ready(function() {
 	    
 	$(".lollipop_amount").html("<h2>Klik op de lollie<h2>");
 	$(".gummybear_amount").html("<h2>Klik op de Gummy Bear<h2>");
+	$(".candystore_amount").html("<h2>Klik op de Winkel<h2>");
 	$(".testen").html("<p>Je hebt " + lollies + " lollies<p>");
 
 	function autoclicker (lvl,time) {
@@ -341,19 +343,20 @@ $(".upgrade_to_gummy_bear").click(function() {
 			$(".lollipop_amount").html("<h2>Je hebt " + gummy_bears + " Gummy Bears</h2>");
 			$(".upgrade_to_gummy_bear").html("Ga naar de Gummy Bears");
 			$(".testen").html("<p>Je hebt " + lollies + " lollies<p>");
-			$('.container').hide();
+			$('.container1').hide();
 			$('.container2').show();
 			upgrade_to_gummy_bear = 1;
 		}
 	} else if (upgrade_to_gummy_bear == 1) {
-		$('.container').hide();
+		$('.container3').hide();
+		$('.container1').hide();
 		$('.container2').show();
 	}
 });
 
 $(".back_to_lollies").click(function(){
 	$(".container2").hide();
-	$(".container").show();
+	$(".container1").show();
 	$(".lollipop_amount").html("<h2>Je hebt " + lollies + " lollies</h2>");
 });
 ////////////////////////////// GUMMY BEAR END//////////////////////////////////////////
@@ -367,6 +370,15 @@ $(".candy_store").click(function() {
 $(".close_pop_up_candy_store").click(function() {
 	$(".pop_up_candy_store").hide();
 });
+
+$(".submit_name_button").click(function() {
+	$(".pop_up_candy_store").hide();
+	$(".container1").hide();
+	$(".container2").hide();
+	$(".container3").show();
+});
+
+
 
 
 
