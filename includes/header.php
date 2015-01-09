@@ -12,7 +12,7 @@
 
 <div class="page-header">
 	<div class="container">
-		<h1>Candies</h1>
+		<h1>Candy Clicker</h1>
 	</div>
 </div>
 	

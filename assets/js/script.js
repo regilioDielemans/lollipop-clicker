@@ -355,9 +355,18 @@ $(".upgrade_to_gummy_bear").click(function() {
 });
 
 $(".back_to_lollies").click(function(){
+	$(".container3").hide();
 	$(".container2").hide();
 	$(".container1").show();
 	$(".lollipop_amount").html("<h2>Je hebt " + lollies + " lollies</h2>");
+});
+$(".back_to_gummybears").click(function(){
+	if (upgrade_to_gummy_bear == 1) {
+		$(".container3").hide();
+		$(".container1").hide();
+		$(".container2").show();
+		$(".gummybear_amount").html("<h2>Je hebt " + lollies + " Gummy bears</h2>");
+	}
 });
 ////////////////////////////// GUMMY BEAR END//////////////////////////////////////////
 

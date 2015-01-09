@@ -10,7 +10,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-5 col-xs-12">
+	<div class="col-md-5 col-sm-12 col-xs-12">
 		<div class="col-md-12">
 			<p class="lollipop_amount"></p>
 		</div>
@@ -82,13 +82,13 @@
 <!-- CANDY STORE CLICKER START -->
 
 <div class="container3">
-	<div class="col-md-3 col-xs-12">
+	<div class="col-md-4 col-xs-12">
 		<div class="candystore_clicker">
 			<img class="lollipop-img" src="assets/img/store.png" alt="">
 		</div>
 	</div>
 
-	<div class="col-md-5 col-xs-12">
+	<div class="col-md-3 col-xs-12">
 		<div class="col-md-12">
 			<p class="candystore_amount">Klik op de winkel</p>
 		</div>
@@ -118,11 +118,11 @@
 
 	</div>
 
-	<div class="col-md-4 col-xs-12">
+	<div class="col-md-5 col-xs-12">
 		<h3 class="testen"></h3>
 		<p><button class="back_to_lollies btn">Ga naar de lollies</button></p>
-		<p><button class="back_to_lollies btn">Ga naar de gummy bears</button></p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ab ducimus debitis officiis, magni cumque illum possimus. Ad iure quibusdam, nulla, accusamus deleniti excepturi voluptatem. Praesentium sapiente, libero quas perferendis.</p>
+		<p><button class="back_to_gummybears btn"><strike>Ga naar de gummy bears</strike></button></p>
+		<p>Geef mensen werk<br>Krijg geld en koop het ultieme snoepje</p>
 	</div>
 </div>
 

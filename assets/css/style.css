@@ -1,6 +1,7 @@
 body{
 	background-color: #F2E608;
 	color: black;
+	width: 100%;
 }
 * {
 	-khtml-user-select: none;
@@ -10,16 +11,15 @@ body{
     user-select: none;
 }
 .page-header {
+	width: 100%;
 	margin-top: 0px;
 	background-color: #F5041A;
 }
 h1 {
 	color:#FDDC00;	
 }
-.container, .container2 {
-	margin-right: auto;
-	margin-left: auto;
-	width: 1060px;
+.container {
+	width: 100%;
 }
 .lollipop_clicker, .gummybear_clicker, .candy_Store {
 	margin-right: auto;
@@ -43,26 +43,52 @@ img:active{
 button{
 	background-color: #DD038F;
 	margin-top: 10px;
-	width: 250px;
+	width: 60%;
 }
-@media (max-width: 200px) { 
-	html{
-		width: 200px;
+@media (max-width: 992px) { 
+	html {
+		width: 100%;
 	}
-	body{
-		width: 200px;
-		max-height: 20px;
+	body {
+		width: 100%;
 	}
-	.container{
-		width: 200px;
+	.container1, .container2, .container3 {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.col-xs-12 {
+		width: 400px;
+	}
+	button {
+		background-color: #DD038F;
+		margin-top: 10px;
+		width: 100%;
 	}
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	body{
-		width: 200px;
+		width: 100%;
 		max-height: 20px;
+		text-align: center;
+	}
+	.container1, .container2, .container3 {
+		position: relative;
+		width: 300px;
+		margin: 0 auto !important;
+	}
+	button{
+		background-color: #DD038F;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.page-header {
+		width: 100%;
+
+	}
+	.col-xs-12 {
+		width: 100%;
 	}
 }
 
