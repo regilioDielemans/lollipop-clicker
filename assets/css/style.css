@@ -13,7 +13,7 @@ h1 {
 	margin-left: auto;
 	width: 1060px;
 }
-.lollipop_clicker, .clicker2 {
+.lollipop_clicker, .gummybear_clicker {
 	margin-right: auto;
 	margin-left: auto;
 	height: 320px;
@@ -23,6 +23,11 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	transition: height 0.2s;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 img:active{
 	height: 200px;
@@ -51,4 +56,60 @@ button{
 		width: 200px;
 		max-height: 20px;
 	}
+}
+
+.pop_up_candy_store_head {
+	border-top-left-radius: 20px;
+  	border-top-right-radius: 20px;
+  	width: 298px;
+  	height: 50px;
+  	background-color: #F5041A;
+}
+.pop_up_candy_store_title {
+	display: block;
+	padding-top: 10px;
+	padding-left: 5px;
+	font-size: 20px;
+	color: white;
+}
+.pop_up_candy_store {
+	width: 300px;
+  	height: 150px;
+  	background-color: #F2E608;
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	margin-left: -150px;
+  	margin-top: -100px;
+  	border-top-left-radius: 22px;
+  	border-top-right-radius: 20px;
+  	border-bottom-left-radius: 5px;
+  	border-bottom-right-radius: 5px;
+  	border: 2px solid #F5041A;
+}
+.pop_up_candy_store form {
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 250px;
+}
+.pop_up_candy_store_input {
+	margin: 0 auto;
+	width: 250px;
+	height: 25px;
+	font-size: 30px;
+	color: #F5041A;
+}
+.submit_name_button {
+	float: right;
+}
+.close_pop_up_candy_store {
+	float: right;
+	border: none;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	padding: 0px;
+	margin-top: 5px;
+	color: white;
+	background-color: transparent;
 }
